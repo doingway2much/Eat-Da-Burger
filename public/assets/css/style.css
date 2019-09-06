@@ -1,0 +1,46 @@
+#main {
+    background-color: yellow;
+   }
+.container {
+    background-color: white;
+}
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url("../img/burger_jumbo_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    /* text-shadow: black 0.3em 0.3em 0.3em; */
+}
+#add-a-burger {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 25px;
+}
+#welcome {
+   
+    margin-left: 75px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+#siteName {
+    margin-top: -18x;
+    margin-left: 75px;
+    font-size: 100px;
+    font-weight: bold;
+    color: red;
+    outline-color: black;
+    outline-width: 10px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+#main-lead {
+    margin-bottom: -3px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 125px;
+}
+.burger {
+    width: 100px;
+    height: 100px;
+}

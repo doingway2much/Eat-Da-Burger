@@ -1,12 +1,13 @@
 <div class="container content">
     <div class=jumbotron>
-    <h1 id="roboto" class="display-2">Welcome to the</h1>
-    <h1 id="redtext" class="display-4">Eat-Da-Burger!</h1>
-     <p class="lead"></p>Welcome to the stie.  Add a burger or devour an exsisting one!!!!.</p>
+    <h1 id="welcome" class="display-3">Welcome to</h1>
+    <h1 id="siteName" class="display-4">Eat-Da-Burger!</h1>
+     <p id="main-lead" class="lead">Add your favorite burger and it will appear below ready to be devoured!!!!  Once it appears below you can click  
+     <p id="main-lead" class="lead">on the "DEVOUR IT!" button and it will move to the "Burger Hall of Fame".</p>
     </div>
 
-<div class="row">
-    <h2>Add a Burger</h2>
+<div id="add-a-burger" class="row">
+    {{!-- <h2>Add a Burger</h2> --}}
     <form class="add-form">
     <div class="form-group">
     <label for="name_inout">Burger Name:</label>
@@ -20,31 +21,39 @@
     <hr>
 
 <div class="row">
-    <div class ="col-sm-5">
+    <div class ="col-sm-5 text-center">
         <ul>
         {{#each burgers}}
         {{#unless this.devoured }}
             {{!-- {{> burgers/burger-block }} --}}
         <ul>
+        <img class="burger burger-icon" src="../assets/img/burger.png" alt="mini_burger">
+        <br>
+        {{burger_name}}
+        <br>
 	    <button class="btn btn-success btn-sm devour" data-id="{{id}}" data-devourState="{{devoured}}">
 	    {{#unless devoured}}DEVOUR IT!{{/unless}}
 	    </button>
-	    {{burger_name}}
+	    
         </ul>
         {{/unless}}
          {{/each}}
         </ul>
         </div>
-    <div class ="col-sm-5">
+    <div class ="col-sm-1"></div>
+    <div class ="col-sm-5 text-center">
         <ul>
         {{#each burgers}}
         {{#if this.devoured }}
-            {{!-- {{> burgers/burger-block }} --}}
+      
         <ul>
+        <img class="burger devoured-icon" src="../assets/img/burger_bite.png" alt="devoured_burger">
+        <br>
+        {{burger_name}}
+        <br>
 	    <button class="btn btn-danger btn-sm undevour" data-id="{{id}}" data-devourState="{{devoured}}">
-	    {{#if devoured}}ORDER AGAIN{{/if}}
+	    {{#if devoured}}DELETE{{/if}}
 	    </button>
-	    {{burger_name}}
         </ul>
         {{/if}}
         {{/each}}
