@@ -1,0 +1,35 @@
+
+
+<div class="container content">
+    <div class=jumbotron>
+    <h1 id="roboto" class="display-2">Welcome to the</h1>
+    <h1 id="redtext" class="display-4">Eat-Da-Burger!</h1>
+     <p class="lead"></p>Welcome to the stie.  Add a burger or devour an exsisting one!!!!.</p>
+    </div>
+
+<div class="row">
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="name_inout">Burger Name:</label>
+    <input type="text" id="name_input" name="name">
+  
+
+  <button type="submit">Add Burger</button>
+  </div>
+</form>
+<br>
+<hr>
+<ul>
+  {{#each burgers}}
+    {{#unless this.devoured: }}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+{{!-- <h1>{{burgers}}</h1> --}}
+
+</div>
+</div>
+</div>
