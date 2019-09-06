@@ -17,11 +17,9 @@
     </form>
     </div>
 
-    <br>
-    <hr>
-
 <div class="row">
     <div class ="col-sm-5 text-center">
+        <h3>Burger Menu:</h3>
         <ul>
         {{#each burgers}}
         {{#unless this.devoured }}
@@ -42,6 +40,7 @@
         </div>
     <div class ="col-sm-1"></div>
     <div class ="col-sm-5 text-center">
+        <h3>Burger History:</h3>
         <ul>
         {{#each burgers}}
         {{#if this.devoured }}
