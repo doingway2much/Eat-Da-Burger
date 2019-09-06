@@ -3,7 +3,7 @@ The "Eat-Da-Burger" App is created with Node.js, mysql, express, handelbars, orm
 
 
 [Live DEMO hosted on Heroku](https://dry-beach-45701.herokuapp.com "Live DEMO")
-[Watch a DEMO on YouTube(https://www.youtube.com/watch?v=KZ7MI2xj6vo&feature=youtu.be "YouTube DEMO")
+[Watch a DEMO on YouTube](https://www.youtube.com/watch?v=KZ7MI2xj6vo&feature=youtu.be "YouTube DEMO")
 
 ![IMG1](https://github.com/doingway2much/Bootstrap-Portfolio/blob/master/assets/img/BurgerApp.jpg?raw=true)
 
