@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
   password: "@lmost12",
   database: "burgers_db"
 });
-
+};
 // Make connection.
 connection.connect(function(err) {
   if (err) {
