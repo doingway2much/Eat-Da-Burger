@@ -9,11 +9,11 @@
 
 <div class="row">
 <h2>Add a Burger</h2>
-<form class="create-form">
+<form class="add-form">
 
   <div class="form-group">
     <label for="name_inout">Burger Name:</label>
-    <input type="text" id="name_input" name="name">
+    <input type="text" id="name_input" name="burger_name">
   
 
   <button type="submit">Add Burger</button>
@@ -23,8 +23,8 @@
 <hr>
 <ul>
   {{#each burgers}}
-    {{#unless this.devoured: }}
-      {{> burgers/burger-block devoured=true}}
+    {{#unless this.devoured }}
+      {{> burgers/burger-block }}
     {{/unless}}
   {{/each}}
 </ul>
