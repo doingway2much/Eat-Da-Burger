@@ -2,7 +2,9 @@
 The "Eat-Da-Burger" App is created with Node.js, mysql, express, handelbars, orm, Javascript and jQuery.  The App allows you to add burgers to the menu and then devour them.  Once devoured they move to the right side of the screen and give you an option to delete the burgers.  This can be hellpful when trying to clean up recorders from users playing arround.
 
 
-[I'm an inline-style link with title](https://dry-beach-45701.herokuapp.com "Live demo")
+[Live DEMO hosted on Heroku](https://dry-beach-45701.herokuapp.com "Live DEMO")
+[Watch a DEMO on YouTube(https://www.youtube.com/watch?v=KZ7MI2xj6vo&feature=youtu.be "YouTube DEMO")
+
 ![IMG1](https://github.com/doingway2much/Bootstrap-Portfolio/blob/master/assets/img/BurgerApp.jpg?raw=true)
 
 
